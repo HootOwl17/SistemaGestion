@@ -7,17 +7,17 @@ Imports System.Runtime.InteropServices
 ' asociada a un ensamblado.
 
 ' Revisar los valores de los atributos del ensamblado
-<Assembly: AssemblyTitle("SistemaGestion1")>
+<Assembly: AssemblyTitle("SistemaGestion")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("SistemaGestion1")>
+<Assembly: AssemblyProduct("SistemaGestion")>
 <Assembly: AssemblyCopyright("Copyright ©  2022")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'El siguiente GUID es para el Id. typelib cuando este proyecto esté expuesto a COM
-<Assembly: Guid("2808e17a-12bb-4650-80da-a129c006943e")>
+<Assembly: Guid("1858baf6-fe5b-440e-bad0-c37764a9eebd")>
 
 ' La información de versión de un ensamblado consta de los siguientes cuatro valores:
 '
