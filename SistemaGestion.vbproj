@@ -94,6 +94,7 @@
   <ItemGroup>
     <Content Include="404.aspx" />
     <Content Include="blank.aspx" />
+    <Content Include="charts.aspx" />
     <Content Include="forgot-password.aspx" />
     <Content Include="index.aspx" />
     <Content Include="login.aspx" />
@@ -114,6 +115,13 @@
     </Compile>
     <Compile Include="blank.aspx.vb">
       <DependentUpon>blank.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="charts.aspx.designer.vb">
+      <DependentUpon>charts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="charts.aspx.vb">
+      <DependentUpon>charts.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="forgot-password.aspx.designer.vb">
