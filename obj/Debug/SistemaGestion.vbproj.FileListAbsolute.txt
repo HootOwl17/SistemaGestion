@@ -61,3 +61,13 @@ C:\Sitios\SistemaGestion\obj\Debug\SistemaGestion.vbproj.CopyComplete
 C:\Sitios\SistemaGestion\obj\Debug\SistemaGestion.dll
 C:\Sitios\SistemaGestion\obj\Debug\SistemaGestion.xml
 C:\Sitios\SistemaGestion\obj\Debug\SistemaGestion.pdb
+C:\Sitios\SistemaGestion\bin\MySql.Data.dll
+C:\Sitios\SistemaGestion\bin\ZstdNet.dll
+C:\Sitios\SistemaGestion\bin\K4os.Compression.LZ4.Streams.dll
+C:\Sitios\SistemaGestion\bin\BouncyCastle.Crypto.dll
+C:\Sitios\SistemaGestion\bin\Ubiety.Dns.Core.dll
+C:\Sitios\SistemaGestion\bin\System.Memory.dll
+C:\Sitios\SistemaGestion\bin\System.Buffers.dll
+C:\Sitios\SistemaGestion\bin\K4os.Compression.LZ4.dll
+C:\Sitios\SistemaGestion\bin\K4os.Hash.xxHash.dll
+C:\Sitios\SistemaGestion\bin\System.Numerics.Vectors.dll

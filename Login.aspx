@@ -43,21 +43,19 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                     </div>
-                                    <form class="user">
+                                    <form class="user" id="form1" runat="server">
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter Email Address...">
+                                            <asp:TextBox ID="InputEmail" runat="server" class="form-control form-control-user" 
+                                                placeholder="Enter Email Address..."></asp:TextBox>
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
+                                            <asp:TextBox type="password" class="form-control form-control-user"
+                                                ID="InputPassword" placeholder="Password" runat="server"></asp:TextBox>
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck">
-                                                <label class="custom-control-label" for="customCheck">Remember
-                                                    Me</label>
+                                                <asp:CheckBox ID="customCheck" runat="server" class="custom-control-input" />
+                                                <asp:Label ID="Label1" runat="server" class="custom-control-label" for="customCheck">Remember Me</asp:Label>
                                             </div>
                                         </div>
                                         <a href="index.aspx" class="btn btn-primary btn-user btn-block">
