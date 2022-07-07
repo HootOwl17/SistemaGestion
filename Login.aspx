@@ -43,31 +43,33 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                     </div>
-                                    <form class="user" id="form1" runat="server">
+                                    <form class="user" id="formLogin" runat="server">
                                         <div class="form-group">
-                                            <asp:TextBox ID="InputEmail" runat="server" class="form-control form-control-user" 
+                                            <asp:TextBox ID="txtEmail" runat="server" class="form-control form-control-user" 
                                                 placeholder="Enter Email Address..."></asp:TextBox>
                                         </div>
                                         <div class="form-group">
                                             <asp:TextBox type="password" class="form-control form-control-user"
-                                                ID="InputPassword" placeholder="Password" runat="server"></asp:TextBox>
+                                                ID="txtPassword" placeholder="Password" runat="server"></asp:TextBox>
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
-                                                <asp:CheckBox ID="customCheck" runat="server" class="custom-control-input" />
-                                                <asp:Label ID="Label1" runat="server" class="custom-control-label" for="customCheck">Remember Me</asp:Label>
+                                                <asp:CheckBox ID="rememberCheck" runat="server" class="custom-control-input" />
+                                                <asp:Label ID="rememberLb" runat="server" class="custom-control-label" for="customCheck">Remember Me</asp:Label>
                                             </div>
                                         </div>
-                                        <a href="index.aspx" class="btn btn-primary btn-user btn-block">
-                                            Login
-                                        </a>
+                                        <asp:Button ID="loginBtn" runat="server" Text="Login" class="btn btn-primary btn-user btn-block"/>
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="forgot-password.aspx">Forgot Password?</a>
+                                        <asp:HyperLink ID="HyperLink1" runat="server" class="small" href="forgot-password.aspx">
+                                            Forgot Password?
+                                        </asp:HyperLink>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="register.aspx">Create an Account!</a>
+                                        <asp:HyperLink ID="HyperLink2" runat="server" class="small" href="register.aspx">
+                                            Create an Account!
+                                        </asp:HyperLink>
                                     </div>
                                 </div>
                             </div>

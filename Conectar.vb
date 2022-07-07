@@ -1,7 +1,10 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Web
+Imports MySql.Data.MySqlClient
 
 Public Module Conectar
     Public Conexion As New MySqlConnection
+    'Public Shared Cnn As SqlClient.SqlConnection
+    'Public Shared Validar As String = "0"
 
     Public Sub ConectarMySql()
         Try
@@ -14,3 +17,12 @@ Public Module Conectar
         End Try
     End Sub
 End Module
+
+Public Class Conexiones
+    Public Shared Cnn As SqlClient.SqlConnection
+    Public Shared Validar As String = "0"
+
+    Public Shared Sub AbrirConexion()
+        Cnn = New SqlConnection("server=localhost;User Id=root;database=sistemagestion;Password= ;SslMode=none")
+    End Sub
+End Class

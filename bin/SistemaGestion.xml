@@ -37,45 +37,54 @@ SistemaGestion
  Devuelve el objeto de registro Asp.
  </summary>
 </member>
-<member name="F:SistemaGestion.login._form1">
+<member name="F:SistemaGestion.login._formLogin">
 <summary>
-Control form1.
+Control formLogin.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:SistemaGestion.login._InputEmail">
+<member name="F:SistemaGestion.login._txtEmail">
 <summary>
-Control InputEmail.
+Control txtEmail.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:SistemaGestion.login._InputPassword">
+<member name="F:SistemaGestion.login._txtPassword">
 <summary>
-Control InputPassword.
+Control txtPassword.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:SistemaGestion.login._customCheck">
+<member name="F:SistemaGestion.login._rememberCheck">
 <summary>
-Control customCheck.
+Control rememberCheck.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:SistemaGestion.login._Label1">
+<member name="F:SistemaGestion.login._rememberLb">
 <summary>
-Control Label1.
+Control rememberLb.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:SistemaGestion.login._loginBtn">
+<summary>
+Control loginBtn.
 </summary>
 <remarks>
 Campo generado automáticamente.
