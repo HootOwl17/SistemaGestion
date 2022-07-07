@@ -3,6 +3,7 @@ Imports MySql.Data.MySqlClient
 
 Public Module Conectar
     Public Conexion As New MySqlConnection
+    Dim comando As MySqlCommand = New MySqlCommand
     'Public Shared Cnn As SqlClient.SqlConnection
     'Public Shared Validar As String = "0"
 
@@ -19,6 +20,7 @@ Public Module Conectar
 End Module
 
 Public Class Conexiones
+    Public 
     Public Shared Cnn As SqlClient.SqlConnection
     Public Shared Validar As String = "0"
 

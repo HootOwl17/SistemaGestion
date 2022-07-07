@@ -1,8 +1,35 @@
-﻿Public Class login
+﻿Imports MySql.Data.MySqlClient
+Public Class login
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
+    End Sub
+
+    Protected Sub loginBtn_Click(sender As Object, e As EventArgs) Handles loginBtn.Click
+
+        Conectar.ConectarMySql()
+        'Conectar.Cnn.Open()
+        Dim comando As MySqlCommand = New MySqlCommand
+
+        comando.CommandText = "select * from usuarios where usuario='" & txtEmail.Text & "' and clave='" & txtPassword.Text & "'"
+
+        Dim r As MySqlDataReader
+
+        r = comando.ExecuteReader
+
+        If r.HasRows <> False Then
+            CreateCookies()
+            r.Read()
+            MsgBox(r.GetString("nombre"))
+            Response.Redirect("~/index.aspx")
+
+        Else
+            MsgBox("usuario incorrecto! ", vbCritical, "Login Error")
+
+        End If
+
+        Conectar.Conexion.Close()
     End Sub
 
     Private Sub CreateCookies()
@@ -23,27 +50,5 @@
             Response.Cookies.Add(cookie)
 
         End If
-    End Sub
-
-    Protected Sub loginBtn_Click(sender As Object, e As EventArgs) Handles loginBtn.Click
-
-        Conectar.ConectarMySql()
-        'Conectar.Cnn.Open()
-
-        Dim da As New SqlClient.SqlDataAdapter("select * from usuarios where usuario='" & txtEmail.Text & "' and clave='" & txtPassword.Text & "'",
-            Conectar.Conexion)
-        Dim ds As New DataSet
-        da.Fill(ds)
-        If ds.Tables(0).Rows.Count > 0 Then
-            CreateCookies()
-
-            Response.Redirect("~/estudiantes.aspx")
-
-        Else
-            MsgBox("usuario incorrecto! ", vbCritical, "Login Error")
-
-        End If
-
-        Conectar.Conexion.Close()
     End Sub
 End Class
