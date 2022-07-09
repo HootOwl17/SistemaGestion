@@ -103,6 +103,7 @@
     <Content Include="index.aspx" />
     <Content Include="login.aspx" />
     <Content Include="register.aspx" />
+    <Content Include="Tablas\Empresa.aspx" />
     <Content Include="tables.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -176,6 +177,13 @@
       <DependentUpon>register.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Tablas\Empresa.aspx.designer.vb">
+      <DependentUpon>Empresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\Empresa.aspx.vb">
+      <DependentUpon>Empresa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="tables.aspx.designer.vb">
       <DependentUpon>tables.aspx</DependentUpon>
     </Compile>
@@ -210,6 +218,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

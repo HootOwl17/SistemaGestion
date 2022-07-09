@@ -20,11 +20,11 @@ Public Module Conectar
 End Module
 
 Public Class Conexiones
-    Public 
+    'Public 
     Public Shared Cnn As SqlClient.SqlConnection
     Public Shared Validar As String = "0"
 
     Public Shared Sub AbrirConexion()
-        Cnn = New SqlConnection("server=localhost;User Id=root;database=sistemagestion;Password= ;SslMode=none")
+        'Cnn = New SqlConnection("server=localhost;User Id=root;database=sistemagestion;Password= ;SslMode=none")
     End Sub
 End Class

@@ -1,3 +1,6 @@
+C:\Sitios\SistemaGestion\obj\Debug\SistemaGestion.Resources.resources
+C:\Sitios\SistemaGestion\obj\Debug\SistemaGestion.vbproj.GenerateResource.cache
+C:\Sitios\SistemaGestion\obj\Debug\SistemaGestion.vbproj.CoreCompileInputs.cache
 C:\Sitios\SistemaGestion\bin\SistemaGestion.dll.config
 C:\Sitios\SistemaGestion\bin\SistemaGestion.dll
 C:\Sitios\SistemaGestion\bin\SistemaGestion.pdb
@@ -52,15 +55,6 @@ C:\Sitios\SistemaGestion\bin\roslyn\vbc.rsp
 C:\Sitios\SistemaGestion\bin\roslyn\VBCSCompiler.exe
 C:\Sitios\SistemaGestion\bin\roslyn\VBCSCompiler.exe.config
 C:\Sitios\SistemaGestion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Sitios\SistemaGestion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Sitios\SistemaGestion\obj\Debug\SistemaGestion.vbproj.AssemblyReference.cache
-C:\Sitios\SistemaGestion\obj\Debug\SistemaGestion.Resources.resources
-C:\Sitios\SistemaGestion\obj\Debug\SistemaGestion.vbproj.GenerateResource.cache
-C:\Sitios\SistemaGestion\obj\Debug\SistemaGestion.vbproj.CoreCompileInputs.cache
-C:\Sitios\SistemaGestion\obj\Debug\SistemaGestion.vbproj.CopyComplete
-C:\Sitios\SistemaGestion\obj\Debug\SistemaGestion.dll
-C:\Sitios\SistemaGestion\obj\Debug\SistemaGestion.xml
-C:\Sitios\SistemaGestion\obj\Debug\SistemaGestion.pdb
 C:\Sitios\SistemaGestion\bin\MySql.Data.dll
 C:\Sitios\SistemaGestion\bin\ZstdNet.dll
 C:\Sitios\SistemaGestion\bin\K4os.Compression.LZ4.Streams.dll
@@ -71,3 +65,9 @@ C:\Sitios\SistemaGestion\bin\System.Buffers.dll
 C:\Sitios\SistemaGestion\bin\K4os.Compression.LZ4.dll
 C:\Sitios\SistemaGestion\bin\K4os.Hash.xxHash.dll
 C:\Sitios\SistemaGestion\bin\System.Numerics.Vectors.dll
+C:\Sitios\SistemaGestion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Sitios\SistemaGestion\obj\Debug\SistemaGestion.vbproj.CopyComplete
+C:\Sitios\SistemaGestion\obj\Debug\SistemaGestion.dll
+C:\Sitios\SistemaGestion\obj\Debug\SistemaGestion.xml
+C:\Sitios\SistemaGestion\obj\Debug\SistemaGestion.pdb
+C:\Sitios\SistemaGestion\obj\Debug\SistemaGestion.vbproj.AssemblyReference.cache
