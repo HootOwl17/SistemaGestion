@@ -26,7 +26,7 @@ Public Class Conexiones
     Public Shared Validar As String = "0"
 
     Public Shared Sub AbrirConexion()
-        Cnn = New MySqlConnection("server=localhost;Port=3306;User Id=root;database=sistemagestion;Password= ;") 'SslMode=none
+        Cnn = New MySqlConnection("server=localhost;Port=3306;User Id=root;database=sistemagestion;Password= ;SslMode=none") 'SslMode=none
         'Cnn.ConnectionString = "server=localhost:3306;User Id=root;database=sistemagestion;Password= ;" 'SslMode=none
     End Sub
 End Class

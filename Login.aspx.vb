@@ -31,7 +31,7 @@ Public Class login
     End Sub
 
     Private Sub CreateCookies()
-        Dim FechaHora As String = Now.AddMinutes(30)
+        Dim FechaHora As String = Now.AddMinutes(20)
 
         If Request.Cookies("EmpleadoASP") Is Nothing Then
 
