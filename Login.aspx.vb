@@ -13,7 +13,7 @@ Public Class login
         Conexiones.Cnn.Open()
         Dim comando As MySqlCommand = New MySqlCommand
 
-        Dim da As New SqlClient.SqlDataAdapter("select * from usuarios where usuario='" & txtEmail.Text & "' and clave='" & txtPassword.Text & "'", Conexiones.Cnn)
+        Dim da As New MySqlDataAdapter("select * from usuario where CORREO='" & txtEmail.Text & "' and PASSWORD='" & txtPassword.Text & "'", Conexiones.Cnn)
         Dim ds As New DataSet
         da.Fill(ds)
         If ds.Tables(0).Rows.Count > 0 Then
