@@ -8,20 +8,17 @@ Public Class login
 
     Protected Sub loginBtn_Click(sender As Object, e As EventArgs) Handles loginBtn.Click
 
-        Conectar.ConectarMySql()
-        'Conectar.Cnn.Open()
+        'Conectar.ConectarMySql()
+        Conexiones.AbrirConexion()
+        Conexiones.Cnn.Open()
         Dim comando As MySqlCommand = New MySqlCommand
 
-        comando.CommandText = "select * from usuarios where usuario='" & txtEmail.Text & "' and clave='" & txtPassword.Text & "'"
-
-        Dim r As MySqlDataReader
-
-        r = comando.ExecuteReader
-
-        If r.HasRows <> False Then
+        Dim da As New SqlClient.SqlDataAdapter("select * from usuarios where usuario='" & txtEmail.Text & "' and clave='" & txtPassword.Text & "'", Conexiones.Cnn)
+        Dim ds As New DataSet
+        da.Fill(ds)
+        If ds.Tables(0).Rows.Count > 0 Then
             CreateCookies()
-            r.Read()
-            MsgBox(r.GetString("nombre"))
+
             Response.Redirect("~/index.aspx")
 
         Else
@@ -29,7 +26,8 @@ Public Class login
 
         End If
 
-        Conectar.Conexion.Close()
+        Conexiones.Cnn.Close()
+        'Conectar.Conexion.Close()
     End Sub
 
     Private Sub CreateCookies()
@@ -43,7 +41,6 @@ Public Class login
             Response.Cookies.Add(aCookie)
 
         Else
-
             Dim cookie As HttpCookie = HttpContext.Current.Request.Cookies("EmpleadoASP")
             cookie.Value = "Activa"
             cookie.Expires = FechaHora
