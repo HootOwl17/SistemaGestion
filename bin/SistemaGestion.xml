@@ -109,6 +109,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:SistemaGestion.Empresa._txtUser">
+<summary>
+Control txtUser.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:SistemaGestion.Empresa._formEmpresa">
 <summary>
 Control formEmpresa.
@@ -220,15 +229,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:SistemaGestion.Empresa._empresaGrid">
 <summary>
 Control empresaGrid.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:SistemaGestion.Empresa._btnSesion">
-<summary>
-Control btnSesion.
 </summary>
 <remarks>
 Campo generado automáticamente.

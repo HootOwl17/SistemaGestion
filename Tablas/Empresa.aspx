@@ -13,16 +13,16 @@
     <title>SB Admin 2 - Tables</title>
 
     <!-- Custom fonts for this template -->
-    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"/>
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+        rel="stylesheet"/>
 
     <!-- Custom styles for this template -->
-    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet"/>
 
     <!-- Custom styles for this page -->
-    <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet"/>
 
 </head>
 
@@ -35,7 +35,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.aspx">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../index.aspx">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -47,7 +47,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.aspx">
+                <a class="nav-link" href="../index.aspx">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -329,9 +329,9 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><asp:Label ID="txtUser" runat="server" Text="User"></asp:Label></span>                                
                                 <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                    src="../img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -349,10 +349,10 @@
                                     Activity Log
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
-                                </a>
+                                    </a>
                             </div>
                         </li>
 
@@ -446,15 +446,14 @@
                                             <td>&nbsp;</td>
                                         </tr>
                                     </table>
-                                    <asp:GridView ID="empresaGrid" runat="server" AutoGenerateColumns="False" Width="600px" class="table table-bordered">
+                                    <asp:GridView ID="empresaGrid" runat="server" AutoGenerateColumns="False" Width="600px" class="table table-bordered" >
                                         <Columns>
-                                            <asp:BoundField DataField="ID" HeaderText="ID" />
+                                            <asp:BoundField DataField="ID_EMPRESA" HeaderText="ID" />
                                             <asp:BoundField DataField="NOMBRE" HeaderText="NOMBRE" />
                                             <asp:BoundField DataField="TELEFONO" HeaderText="TELEFONO" />
                                             <asp:BoundField DataField="DIRECCION" HeaderText="DIRECCION" />
-                                            <asp:ButtonField ShowHeader="True" Text="Botón" />
                                         </Columns>
-                                    </asp:GridView>
+                                    </asp:GridView>                                  
 
                                     <table style="width: 100%;">
                                         <tr>
@@ -462,7 +461,6 @@
                                             <td class="auto-style9"></td>
                                             <td class="auto-style1">&nbsp;</td>
                                             <td class="auto-style1">
-                                                <asp:Button ID="btnSesion" runat="server" Text="Cerrar Sesión" Width="119px" />
                                             </td>
                                         </tr>
                                     </table>
@@ -540,7 +538,7 @@
     </a>
 
     <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -553,7 +551,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.aspx">Logout</a>
+                    <a class="btn btn-primary" href="../login.aspx">Logout</a>
                 </div>
             </div>
         </div>
