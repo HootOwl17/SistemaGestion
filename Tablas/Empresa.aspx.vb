@@ -7,6 +7,8 @@ Public Class Empresa
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         VerificaCookie()
 
+        Poblar()
+
     End Sub
 
     Protected Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
@@ -20,6 +22,7 @@ Public Class Empresa
         txtNombre.Text = ""
         txtTelefono.Text = ""
         txtDireccion.Text = ""
+        txtBuscar.Text = ""
         txtNombre.Focus()
     End Sub
 
@@ -41,7 +44,7 @@ Public Class Empresa
         Conexiones.AbrirConexion()
         Conexiones.Cnn.Open()
 
-        If txtID.Text = "0" Then
+        If txtID.Text = "0" Or txtID.Text = "" Then
             Dim cmd As New MySqlCommand("insert into empresa(NOMBRE,TELEFONO,DIRECCION) values('" &
                                         txtNombre.Text & "','" & txtTelefono.Text & "','" & txtDireccion.Text & "')", Conexiones.Cnn)
             cmd.ExecuteNonQuery()
@@ -66,7 +69,7 @@ Public Class Empresa
         Conexiones.AbrirConexion()
         Conexiones.Cnn.Open()
 
-        Dim da As New MySqlDataAdapter("select * from empresa where NOMBRE LIKE '%" & txtBuscar.Text & "%'", Conexiones.Cnn)
+        Dim da As New MySqlDataAdapter("select * from empresa where NOMBRE LIKE '%" & txtBuscar.Text & "%' and ACTIVO = '1'", Conexiones.Cnn)
         ' Dim ds As New DataSet
         dst = New DataSet
         da.Fill(dst)
@@ -126,26 +129,30 @@ Public Class Empresa
         Conexiones.Cnn.Close()
     End Sub
 
-    Protected Sub btnImprimir_Click(sender As Object, e As EventArgs) Handles btnImprimir.Click
-        Conexiones.AbrirConexion()
-        Conexiones.Cnn.Open()
+    Protected Sub btnLimpiar_Click(sender As Object, e As EventArgs) Handles btnLimpiar.Click
+        Limpiar()
 
-        Dim da As New MySqlDataAdapter("select * from empresa where NOMBRE LIKE '%" & txtBuscar.Text & "%'", Conexiones.Cnn)
-        dst = New DataSet
-        da.Fill(dst)
-        If dst.Tables(0).Rows.Count > 0 Then
-            'Para enviar los valores al formulario de reporte
-            Session("grid") = dst.Tables(0)
-            Session("fecha") = Now
-            'Session("materia") = "Literatura"
-            Session("total") = dst.Tables(0).Rows.Count
-
-            Server.Transfer("../reporte.aspx")
-        End If
-
-
-        Conexiones.Cnn.Close()
+        Poblar()
     End Sub
+
+    'Protected Sub btnImprimir_Click(sender As Object, e As EventArgs) Handles btnImprimir.Click
+    '    Conexiones.AbrirConexion()
+    '    Conexiones.Cnn.Open()
+
+    '    Dim da As New MySqlDataAdapter("select * from empresa where NOMBRE LIKE '%" & txtBuscar.Text & "%'", Conexiones.Cnn)
+    '    dst = New DataSet
+    '    da.Fill(dst)
+    '    If dst.Tables(0).Rows.Count > 0 Then
+    '        'Para enviar los valores al formulario de reporte
+    '        Session("grid") = dst.Tables(0)
+    '        Session("fecha") = Now
+    '        'Session("materia") = "Literatura"
+    '        Session("total") = dst.Tables(0).Rows.Count
+
+    '        Server.Transfer("../reporte.aspx")
+    '    End If
+    '    Conexiones.Cnn.Close()
+    'End Sub
 
     'Protected Sub btnSesion_Click(sender As Object, e As EventArgs) Handles btnSesion.Click
     '    Dim cookie As HttpCookie = HttpContext.Current.Request.Cookies("EmpleadoASP")

@@ -5,10 +5,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
 
     <title>SB Admin 2 - Tables</title>
 
@@ -39,7 +39,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">SELPRO<sup>2</sup></div>
             </a>
 
             <!-- Divider -->
@@ -139,7 +139,7 @@
             </li>
 
             <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
+            <hr class="sidebar-divider d-none d-md-block"/>
 
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
@@ -170,7 +170,7 @@
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2">
+                                aria-label="Search" aria-describedby="basic-addon2"/>
                             <div class="input-group-append">
                                 <button class="btn btn-primary" type="button">
                                     <i class="fas fa-search fa-sm"></i>
@@ -195,7 +195,7 @@
                                     <div class="input-group">
                                         <input type="text" class="form-control bg-light border-0 small"
                                             placeholder="Search for..." aria-label="Search"
-                                            aria-describedby="basic-addon2">
+                                            aria-describedby="basic-addon2"/>
                                         <div class="input-group-append">
                                             <button class="btn btn-primary" type="button">
                                                 <i class="fas fa-search fa-sm"></i>
@@ -274,7 +274,7 @@
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
                                         <img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="...">
+                                            alt="..."/>
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -286,7 +286,7 @@
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
                                         <img class="rounded-circle" src="img/undraw_profile_2.svg"
-                                            alt="...">
+                                            alt="..."/>
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -298,7 +298,7 @@
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
                                         <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="...">
+                                            alt="..."/>
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -310,7 +310,7 @@
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
                                         <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
-                                            alt="...">
+                                            alt="..."/>
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div>
@@ -331,7 +331,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"><asp:Label ID="txtUser" runat="server" Text="User"></asp:Label></span>                                
                                 <img class="img-profile rounded-circle"
-                                    src="../img/undraw_profile.svg">
+                                    src="../img/undraw_profile.svg"/>
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -391,7 +391,7 @@
                                         <tr>
                                             <td class="auto-style8">
                                                 <asp:Button ID="btnID" runat="server" Text="ID" Width="70px" />
-                                                <asp:Button ID="btnImprimir" runat="server" Text="Imprimir" Width="119px" />
+                                                <%--<asp:Button ID="btnImprimir" runat="server" Text="Imprimir" Width="119px" />--%>
                                             </td>
                                             <td class="auto-style2">
                                                 <asp:TextBox ID="txtID" runat="server" Width="215px"></asp:TextBox>
@@ -440,7 +440,7 @@
                                                 <asp:TextBox ID="txtBuscar" runat="server" Width="525px"></asp:TextBox>
                                             </td>
                                             <td class="auto-style5">
-                                                
+                                                <asp:Button ID="btnLimpiar" runat="server" Text="Limpiar" Width="119px" />
                                             </td>
                                             <td class="auto-style4">&nbsp;</td>
                                             <td>&nbsp;</td>

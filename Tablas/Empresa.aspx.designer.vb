@@ -41,15 +41,6 @@ Partial Public Class Empresa
     Protected WithEvents btnID As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Control btnImprimir.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents btnImprimir As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
     '''Control txtID.
     '''</summary>
     '''<remarks>
@@ -129,6 +120,15 @@ Partial Public Class Empresa
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtBuscar As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control btnLimpiar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btnLimpiar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''Control empresaGrid.
