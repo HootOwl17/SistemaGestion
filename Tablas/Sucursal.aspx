@@ -416,7 +416,7 @@
                                         <tr>
                                             <td class="auto-style8">EMPRESA</td>
                                             <td class="auto-style2">
-                                                <asp:DropDownList ID="ddlEmpresa" runat="server" Width="215px" AutoPostBack="False">
+                                                <asp:DropDownList ID="ddlEmpresa" runat="server" Width="215px" AutoPostBack="True">
 
                                                 </asp:DropDownList>
                                             </td>
@@ -459,7 +459,7 @@
                                             <td>&nbsp;</td>
                                         </tr>
                                     </table>
-                                    <asp:GridView ID="empresaGrid" runat="server" AutoGenerateColumns="False" Width="600px" class="table table-bordered" >
+                                    <asp:GridView ID="sucursalGrid" runat="server" AutoGenerateColumns="False" Width="900px" class="table table-bordered" >
                                         <Columns>
                                             <asp:BoundField DataField="ID_SUCURSAL" HeaderText="ID" />
                                             <asp:BoundField DataField="NOMBRE" HeaderText="NOMBRE" />
@@ -479,46 +479,7 @@
                                         </tr>
                                     </table>
                                     <%--<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                        <thead>
-                                            <tr>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Office</th>
-                                                <th>Age</th>
-                                                <th>Start date</th>
-                                                <th>Salary</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
-                                                <td>$320,800</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Garrett Winters</td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>63</td>
-                                                <td>2011/07/25</td>
-                                                <td>$170,750</td>
-                                            </tr>
-                                        </tbody>
-                                        
-                                        <tfoot>
-                                            <tr>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Office</th>
-                                                <th>Age</th>
-                                                <th>Start date</th>
-                                                <th>Salary</th>
-                                            </tr>
-                                        </tfoot>
-                                    </table>--%>
+                                        --%>
                                 </div>
                             </div>
                         </div>

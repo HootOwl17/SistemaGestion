@@ -140,11 +140,11 @@ Partial Public Class Sucursal
     Protected WithEvents txtBuscar As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control empresaGrid.
+    '''Control sucursalGrid.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents empresaGrid As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents sucursalGrid As Global.System.Web.UI.WebControls.GridView
 End Class

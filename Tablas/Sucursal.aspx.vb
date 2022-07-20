@@ -6,8 +6,13 @@ Public Class Sucursal
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         VerificaCookie()
-        listEmpresa()
+
         Poblar()
+
+        If Not (IsPostBack) Then
+            listEmpresa()
+        End If
+
     End Sub
 
     Protected Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
@@ -39,8 +44,13 @@ Public Class Sucursal
         ddlEmpresa.DataSource = dst
         ddlEmpresa.DataTextField = "NOMBRE"
         ddlEmpresa.DataValueField = "ID_EMPRESA"
+
+        'For i = 1 To dst.Tables().Count Step 1
+        'ddlEmpresa.Items.Insert(0, New ListItem("NOMBRE", "ID_EMPRESA"))
+        'Next
         ddlEmpresa.DataBind()
-        ddlEmpresa.Items.Insert(0, New ListItem("----Seleccione Empresa----", "0"))
+        ddlEmpresa.Items.Insert(0, New ListItem("----Seleccione Empresa----", "disabled"))
+        'ddlEmpresa.SelectedItem = True
 
         Conexiones.Cnn.Close()
 
@@ -65,14 +75,14 @@ Public Class Sucursal
         Conexiones.Cnn.Open()
 
         If txtID.Text = "0" Or txtID.Text = "" Then
-            Dim cmd As New MySqlCommand("insert into sucursal(ID_EMPRESA,NOMBRE,TELEFONO,DIRECCION,ACTIVO) values(" & ddlEmpresa.SelectedItem.Value & ",'" &
+            Dim cmd As New MySqlCommand("insert into sucursal(ID_EMPRESA,NOMBRE,TELEFONO,DIRECCION,ACTIVO) values(" & ddlEmpresa.SelectedValue & ",'" &
                                         txtNombre.Text & "','" & txtTelefono.Text & "','" & txtDireccion.Text & "', '1')", Conexiones.Cnn)
             cmd.ExecuteNonQuery()
 
             Poblar()
             Limpiar()
         Else
-            Dim cmd As New MySqlCommand("update sucursal set NOMBRE='" & txtNombre.Text & "', ID_EMPRESA = '" & ddlEmpresa.SelectedItem.Value &
+            Dim cmd As New MySqlCommand("update sucursal set NOMBRE='" & txtNombre.Text & "', ID_EMPRESA = '" & ddlEmpresa.SelectedValue &
                                         "', TELEFONO='" & txtTelefono.Text & "', DIRECCION='" & txtDireccion.Text &
                                         "' where ID_SUCURSAL=" & txtID.Text, Conexiones.Cnn)
             cmd.ExecuteNonQuery()
@@ -96,12 +106,12 @@ Public Class Sucursal
         dst = New DataSet
         da.Fill(dst)
         If dst.Tables(0).Rows.Count > 0 Then
-            empresaGrid.DataSource = dst.Tables(0)
-            empresaGrid.DataBind()
+            sucursalGrid.DataSource = dst.Tables(0)
+            sucursalGrid.DataBind()
 
         Else
-            empresaGrid.DataSource = Nothing
-            empresaGrid.DataBind()
+            sucursalGrid.DataSource = Nothing
+            sucursalGrid.DataBind()
         End If
 
 
@@ -162,6 +172,6 @@ Public Class Sucursal
     End Sub
 
     Protected Sub ddlEmpresa_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlEmpresa.SelectedIndexChanged
-
+        ddlEmpresa.SelectedItem.Selected = True
     End Sub
 End Class
