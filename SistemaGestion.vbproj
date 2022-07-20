@@ -104,6 +104,7 @@
     <Content Include="login.aspx" />
     <Content Include="register.aspx" />
     <Content Include="Tablas\Empresa.aspx" />
+    <Content Include="Tablas\Sucursal.aspx" />
     <Content Include="tables.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -182,6 +183,13 @@
     </Compile>
     <Compile Include="Tablas\Empresa.aspx.vb">
       <DependentUpon>Empresa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Tablas\Sucursal.aspx.designer.vb">
+      <DependentUpon>Sucursal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\Sucursal.aspx.vb">
+      <DependentUpon>Sucursal.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="tables.aspx.designer.vb">
