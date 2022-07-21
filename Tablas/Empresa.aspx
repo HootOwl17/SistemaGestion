@@ -112,8 +112,12 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.aspx">Login</a>
+                        <h6 class="collapse-header">Pantallas</h6>
+                        <a class="collapse-item" href="../login.aspx">Login</a>
+                        <a class="collapse-item" href="../Tablas/Empresa.aspx">Empresa</a>
+                        <a class="collapse-item" href="../Tablas/Sucursal.aspx">Sucursal</a>
+                        <a class="collapse-item" href="../Tablas/Empleado.aspx">Empleado</a>
+                        <a class="collapse-item" href="../Tablas/Cliente.aspx">Cliente</a>
                         <a class="collapse-item" href="register.aspx">Register</a>
                         <a class="collapse-item" href="forgot-password.aspx">Forgot Password</a>
                         <div class="collapse-divider"></div>
@@ -446,7 +450,7 @@
                                             <td>&nbsp;</td>
                                         </tr>
                                     </table>
-                                    <asp:GridView ID="empresaGrid" runat="server" AutoGenerateColumns="False" Width="600px" class="table table-bordered" >
+                                    <asp:GridView ID="empresaGrid" runat="server" AutoGenerateColumns="False" Width="900px" class="table table-bordered" >
                                         <Columns>
                                             <asp:BoundField DataField="ID_EMPRESA" HeaderText="ID" />
                                             <asp:BoundField DataField="NOMBRE" HeaderText="NOMBRE" />
@@ -520,7 +524,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
+                        <span>Copyright &copy; UEES-SELPRO 2022</span>
                     </div>
                 </div>
             </footer>

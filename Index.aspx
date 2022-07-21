@@ -11,7 +11,7 @@
     <meta name="description" content=""/>
     <meta name="author" content=""/>
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>Escritorio</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"/>
@@ -37,7 +37,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">SB Admin <sup>2022</sup></div>
             </a>
 
             <!-- Divider -->
@@ -45,7 +45,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.aspx">
+                <a class="nav-link" href="../index.aspx">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -60,49 +60,6 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Components</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="buttons.aspx">Buttons</a>
-                        <a class="collapse-item" href="cards.aspx">Cards</a>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Utilities</span>
-                </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.aspx">Colors</a>
-                        <a class="collapse-item" href="utilities-border.aspx">Borders</a>
-                        <a class="collapse-item" href="utilities-animation.aspx">Animations</a>
-                        <a class="collapse-item" href="utilities-other.aspx">Other</a>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Addons
-            </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                     aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
@@ -110,14 +67,18 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.aspx">Login</a>
-                        <a class="collapse-item" href="register.aspx">Register</a>
-                        <a class="collapse-item" href="forgot-password.aspx">Forgot Password</a>
+                        <h6 class="collapse-header">Pantallas</h6>
+                        <a class="collapse-item" href="../login.aspx">Login</a>
+                        <a class="collapse-item" href="../Tablas/Empresa.aspx">Empresa</a>
+                        <a class="collapse-item" href="../Tablas/Sucursal.aspx">Sucursal</a>
+                        <a class="collapse-item" href="../Tablas/Empleado.aspx">Empleado</a>
+                        <a class="collapse-item" href="../Tablas/Cliente.aspx">Cliente</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="404.aspx">404 Page</a>
-                        <a class="collapse-item" href="blank.aspx">Blank Page</a>
+                        <a class="collapse-item" href="../register.aspx">Register</a>
+                        <a class="collapse-item" href="../forgot-password.aspx">Forgot Password</a>
+                        <a class="collapse-item" href="../404.aspx">404 Page</a>
+                        <a class="collapse-item" href="../blank.aspx">Blank Page</a>
                     </div>
                 </div>
             </li>
@@ -328,7 +289,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">User</span>
                                 <img class="img-profile rounded-circle" src="img/undraw_profile.svg"/> <!-- AQUI HAY QUE CAMBIAR PARA QUE SALGA UNA IMAGEN, POR TIEMPO, NO CREO QUE LO HAGAMOS -->
                             </a>
                             <!-- Dropdown - User Information -->
@@ -697,7 +658,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright &copy; UEES-SELPRO 2022</span>
                     </div>
                 </div>
             </footer>

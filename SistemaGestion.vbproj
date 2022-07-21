@@ -103,6 +103,8 @@
     <Content Include="index.aspx" />
     <Content Include="login.aspx" />
     <Content Include="register.aspx" />
+    <Content Include="Tablas\Cliente.aspx" />
+    <Content Include="Tablas\Empleado.aspx" />
     <Content Include="Tablas\Empresa.aspx" />
     <Content Include="Tablas\Sucursal.aspx" />
     <Content Include="tables.aspx" />
@@ -176,6 +178,20 @@
     </Compile>
     <Compile Include="register.aspx.vb">
       <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Tablas\Cliente.aspx.designer.vb">
+      <DependentUpon>Cliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\Cliente.aspx.vb">
+      <DependentUpon>Cliente.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Tablas\Empleado.aspx.designer.vb">
+      <DependentUpon>Empleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\Empleado.aspx.vb">
+      <DependentUpon>Empleado.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Tablas\Empresa.aspx.designer.vb">

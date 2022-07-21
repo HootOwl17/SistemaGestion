@@ -24,7 +24,7 @@ Public Class Sucursal
     Private Sub Limpiar()
         txtID.Text = "0"
         txtNombre.Text = ""
-        'ddlEmpresa.DataSourceID = 0
+        ddlEmpresa.ClearSelection()
         txtTelefono.Text = ""
         txtDireccion.Text = ""
         txtBuscar.Text = ""
