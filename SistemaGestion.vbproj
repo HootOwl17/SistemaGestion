@@ -107,6 +107,7 @@
     <Content Include="Tablas\Empleado.aspx" />
     <Content Include="Tablas\Empresa.aspx" />
     <Content Include="Tablas\Sucursal.aspx" />
+    <Content Include="Tablas\Usuario.aspx" />
     <Content Include="tables.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -206,6 +207,13 @@
     </Compile>
     <Compile Include="Tablas\Sucursal.aspx.vb">
       <DependentUpon>Sucursal.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Tablas\Usuario.aspx.designer.vb">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\Usuario.aspx.vb">
+      <DependentUpon>Usuario.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="tables.aspx.designer.vb">
