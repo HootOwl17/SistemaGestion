@@ -69,6 +69,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Pantallas</h6>
                         <a class="collapse-item" href="../login.aspx">Login</a>
+                        <a class="collapse-item" href="../Tablas/Usuario.aspx">Usuario</a>
                         <a class="collapse-item" href="../Tablas/Empresa.aspx">Empresa</a>
                         <a class="collapse-item" href="../Tablas/Sucursal.aspx">Sucursal</a>
                         <a class="collapse-item" href="../Tablas/Empleado.aspx">Empleado</a>
