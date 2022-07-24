@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -46,6 +45,9 @@
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Program Files (x86)\MySQL\MySQL Installer for Windows\MySql.Data.dll</HintPath>
@@ -66,11 +68,6 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
-      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -107,6 +104,8 @@
     <Content Include="Tablas\Empleado.aspx" />
     <Content Include="Tablas\Empresa.aspx" />
     <Content Include="Tablas\Sucursal.aspx" />
+    <Content Include="Tablas\TrabajoRealizado.aspx" />
+    <Content Include="Tablas\TrabajoRealizar.aspx" />
     <Content Include="Tablas\Usuario.aspx" />
     <Content Include="tables.aspx" />
     <Content Include="Web.config" />
@@ -117,21 +116,21 @@
     </Compile>
     <Compile Include="404.aspx.vb">
       <DependentUpon>404.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="blank.aspx.designer.vb">
       <DependentUpon>blank.aspx</DependentUpon>
     </Compile>
     <Compile Include="blank.aspx.vb">
       <DependentUpon>blank.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="charts.aspx.designer.vb">
       <DependentUpon>charts.aspx</DependentUpon>
     </Compile>
     <Compile Include="charts.aspx.vb">
       <DependentUpon>charts.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Conectar.vb" />
     <Compile Include="forgot-password.aspx.designer.vb">
@@ -139,21 +138,21 @@
     </Compile>
     <Compile Include="forgot-password.aspx.vb">
       <DependentUpon>forgot-password.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="index.aspx.designer.vb">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.vb">
       <DependentUpon>index.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="login.aspx.designer.vb">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.vb">
       <DependentUpon>login.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -179,49 +178,63 @@
     </Compile>
     <Compile Include="register.aspx.vb">
       <DependentUpon>register.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Tablas\Cliente.aspx.designer.vb">
       <DependentUpon>Cliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tablas\Cliente.aspx.vb">
       <DependentUpon>Cliente.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Tablas\Empleado.aspx.designer.vb">
       <DependentUpon>Empleado.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tablas\Empleado.aspx.vb">
       <DependentUpon>Empleado.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Tablas\Empresa.aspx.designer.vb">
       <DependentUpon>Empresa.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tablas\Empresa.aspx.vb">
       <DependentUpon>Empresa.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Tablas\Sucursal.aspx.designer.vb">
       <DependentUpon>Sucursal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tablas\Sucursal.aspx.vb">
       <DependentUpon>Sucursal.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tablas\TrabajoRealizado.aspx.designer.vb">
+      <DependentUpon>TrabajoRealizado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\TrabajoRealizado.aspx.vb">
+      <DependentUpon>TrabajoRealizado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tablas\TrabajoRealizar.aspx.designer.vb">
+      <DependentUpon>TrabajoRealizar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\TrabajoRealizar.aspx.vb">
+      <DependentUpon>TrabajoRealizar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Tablas\Usuario.aspx.designer.vb">
       <DependentUpon>Usuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tablas\Usuario.aspx.vb">
       <DependentUpon>Usuario.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="tables.aspx.designer.vb">
       <DependentUpon>tables.aspx</DependentUpon>
     </Compile>
     <Compile Include="tables.aspx.vb">
       <DependentUpon>tables.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -288,11 +301,12 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
