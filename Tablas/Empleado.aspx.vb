@@ -71,7 +71,7 @@ Public Class Empleado
         ddlSucursal.DataValueField = "ID_SUCURSAL"
 
         ddlSucursal.DataBind()
-        ddlSucursal.Items.Insert(0, New ListItem("----Seleccione Empresa----", "disabled"))
+        ddlSucursal.Items.Insert(0, New ListItem("----Seleccione Sucursal----", "disabled"))
 
         Conexiones.Cnn.Close()
 
