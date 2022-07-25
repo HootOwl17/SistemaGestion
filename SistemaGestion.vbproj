@@ -125,6 +125,7 @@
       <DependentUpon>blank.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Cache\ActiveUser.vb" />
     <Compile Include="charts.aspx.designer.vb">
       <DependentUpon>charts.aspx</DependentUpon>
     </Compile>
