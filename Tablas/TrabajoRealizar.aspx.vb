@@ -308,10 +308,10 @@ Public Class TrabajoRealizar
     Protected Sub CBFinal_CheckedChanged(sender As Object, e As EventArgs) Handles CBFinal.CheckedChanged
         If CBFinal.Checked = True Then
             final = 1
-            lblFinal.Text = "Finalizado " + final.ToString
+            'lblFinal.Text = "Finalizado " + final.ToString
         ElseIf CBFinal.Checked = False Then
             final = 0
-            lblFinal.Text = "No Finalizado " + final.ToString
+            'lblFinal.Text = "No Finalizado " + final.ToString
         End If
     End Sub
 
