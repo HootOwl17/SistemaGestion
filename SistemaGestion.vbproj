@@ -103,6 +103,9 @@
     <Content Include="Tablas\Cliente.aspx" />
     <Content Include="Tablas\Empleado.aspx" />
     <Content Include="Tablas\Empresa.aspx" />
+    <Content Include="Tablas\Facturacion.aspx" />
+    <Content Include="Tablas\Pagos.aspx" />
+    <Content Include="Tablas\PagosHistorial.aspx" />
     <Content Include="Tablas\Sucursal.aspx" />
     <Content Include="Tablas\TrabajoRealizado.aspx" />
     <Content Include="Tablas\TrabajoRealizar.aspx" />
@@ -201,6 +204,27 @@
     <Compile Include="Tablas\Empresa.aspx.vb">
       <DependentUpon>Empresa.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tablas\Facturacion.aspx.designer.vb">
+      <DependentUpon>Facturacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\Facturacion.aspx.vb">
+      <DependentUpon>Facturacion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Tablas\Pagos.aspx.designer.vb">
+      <DependentUpon>Pagos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\Pagos.aspx.vb">
+      <DependentUpon>Pagos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Tablas\PagosHistorial.aspx.designer.vb">
+      <DependentUpon>PagosHistorial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tablas\PagosHistorial.aspx.vb">
+      <DependentUpon>PagosHistorial.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Tablas\Sucursal.aspx.designer.vb">
       <DependentUpon>Sucursal.aspx</DependentUpon>
