@@ -74,6 +74,8 @@
                         <a class="collapse-item" href="../Tablas/Sucursal.aspx">Sucursal</a>
                         <a class="collapse-item" href="../Tablas/Empleado.aspx">Empleado</a>
                         <a class="collapse-item" href="../Tablas/Cliente.aspx">Cliente</a>
+                        <a class="collapse-item" href="../Tablas/TrabajoRealizar.aspx">Trabajos a Realizar</a>
+                        <a class="collapse-item" href="../Tablas/TrabajoRealizado.aspx">Trabajos Realizados</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
                         <a class="collapse-item" href="../register.aspx">Register</a>
@@ -290,7 +292,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">User</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><asp:Label ID="lblUser" runat="server" Text="Label"></asp:Label></span>
                                 <img class="img-profile rounded-circle" src="img/undraw_profile.svg"/> <!-- AQUI HAY QUE CAMBIAR PARA QUE SALGA UNA IMAGEN, POR TIEMPO, NO CREO QUE LO HAGAMOS -->
                             </a>
                             <!-- Dropdown - User Information -->
@@ -327,6 +329,8 @@
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+
+                        <h1 class="h3 mb-0 text-gray-800"><asp:Label ID="txtWelcome" runat="server" Text="Label"></asp:Label></h1>
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
