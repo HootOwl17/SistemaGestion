@@ -1,6 +1,12 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports SistemaGestion
 Public Class login
     Inherits System.Web.UI.Page
+    Public IDUser As Integer
+    Public UserName As String
+    Public UserLastName As String
+
+
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
@@ -11,15 +17,23 @@ Public Class login
         'Conectar.ConectarMySql()
         Conexiones.AbrirConexion()
         Conexiones.Cnn.Open()
-        Dim comando As MySqlCommand = New MySqlCommand
+        'Dim comando As MySqlCommand = New MySqlCommand
 
         Dim da As New MySqlDataAdapter("select * from usuario where CORREO='" & txtEmail.Text & "' and PASSWORD= SHA1('" & txtPassword.Text & "') and ACTIVO= '1' ", Conexiones.Cnn)
         Dim ds As New DataSet
         da.Fill(ds)
         If ds.Tables(0).Rows.Count > 0 Then
             CreateCookies()
-
             Response.Redirect("~/index.aspx")
+            While da.Fill(ds)
+                ActiveUser.NameUser = ds.Tables(0).Rows(1).Item("NOMBRE")
+                ActiveUser.LastNUser = ds.Tables(0).Rows(1).Item("APELLIDO")
+                ActiveUser.Password = ds.Tables(0).Rows(1).Item("PASSWORD")
+                ActiveUser.Phone = ds.Tables(0).Rows(1).Item("TELEFONO")
+                ActiveUser.Email = ds.Tables(0).Rows(1).Item("CORREO")
+                ActiveUser.Active = ds.Tables(0).Rows(1).Item("ACTIVO")
+                ActiveUser.IdUser = ds.Tables(0).Rows(1).Item("ID_USUARIO")
+            End While
 
         Else
             MsgBox("usuario incorrecto! ", vbCritical, "Login Error")
