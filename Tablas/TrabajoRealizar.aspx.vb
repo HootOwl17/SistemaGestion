@@ -142,6 +142,14 @@ Public Class TrabajoRealizar
             ttrabajo = 2
         End If
 
+        If CBFinal.Checked = True Then
+            final = 1
+            'lblFinal.Text = "Finalizado " + final.ToString
+        ElseIf CBFinal.Checked = False Then
+            final = 0
+            'lblFinal.Text = "No Finalizado " + final.ToString
+        End If
+
         If txtID.Text = "0" Or txtID.Text = "" Then
             Dim cmd As New MySqlCommand("INSERT INTO `trabajorealizado`(`ID_EMPRESA`, `ID_SUCURSAL`, `ID_CLIENTE`, `ID_EMPLEADO`, `ID_USUARIO`, `FECHA`, `DESCRIPCION`, `TIPOTRABAJO`, `FINALIZADO`, `ACTIVO`) 
                                          VALUES ('" & ddlEmpresa.SelectedValue & "','" & ddlSucursal.SelectedValue & "','" & ddlCliente.SelectedValue & "','" & ddlEmpleado.SelectedValue & "','" & 1 & 'ActiveUser.IdUser
@@ -154,7 +162,7 @@ Public Class TrabajoRealizar
             Dim cmd As New MySqlCommand("UPDATE `trabajorealizado` SET `ID_EMPRESA`='" & ddlEmpresa.SelectedValue & "',`ID_SUCURSAL`='" & ddlSucursal.SelectedValue & "',`ID_CLIENTE`='" & ddlCliente.SelectedValue & "',`ID_EMPLEADO`='" & ddlEmpleado.SelectedValue & "',`ID_USUARIO`='" & 1 & "',`FECHA`='" & txtFecha.Text & 'ActiveUser.IdUser
                                         "',`DESCRIPCION`='" & txtDescripcion.Text & "',`TIPOTRABAJO`='" & ttrabajo & "',`FINALIZADO`= b'" & final & "',`ACTIVO`= b'1' WHERE `ID_TRABAJOREALIZADO`='" & txtID.Text & "'", Conexiones.Cnn)
             cmd.ExecuteNonQuery()
-
+            'lblFinal.Text = cmd.CommandText
             Poblar()
             Limpiar()
 
@@ -300,8 +308,10 @@ Public Class TrabajoRealizar
     Protected Sub CBFinal_CheckedChanged(sender As Object, e As EventArgs) Handles CBFinal.CheckedChanged
         If CBFinal.Checked = True Then
             final = 1
+            lblFinal.Text = "Finalizado " + final.ToString
         ElseIf CBFinal.Checked = False Then
             final = 0
+            lblFinal.Text = "No Finalizado " + final.ToString
         End If
     End Sub
 

@@ -76,6 +76,11 @@
                         <a class="collapse-item" href="../Tablas/Sucursal.aspx">Sucursal</a>
                         <a class="collapse-item" href="../Tablas/Empleado.aspx">Empleado</a>
                         <a class="collapse-item" href="../Tablas/Cliente.aspx">Cliente</a>
+                        <a class="collapse-item" href="../Tablas/TrabajoRealizar.aspx">Trabajos a Realizar</a>
+                        <a class="collapse-item" href="../Tablas/TrabajoRealizado.aspx">Trabajos Realizados</a>
+                        <a class="collapse-item" href="../Tablas/Facturacion.aspx">Facturacion</a>
+                        <a class="collapse-item" href="../Tablas/Pagos.aspx">Pagos</a>
+                        <a class="collapse-item" href="../Tablas/PagosHistorial.aspx">Historial de Pagos</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Other Pages:</h6>
                         <a class="collapse-item" href="../register.aspx">Register</a>
@@ -452,7 +457,8 @@
                                             <td class="auto-style8">FINALIZADO</td>
                                             <td class="auto-style2">
                                                 <asp:CheckBox ID="CBFinal" runat="server" Width="215px" Text=" " AutoPostBack="True"/>
-                                               <%-- <asp:RadioButton ID="CBFinal" runat="server" Width="215px" Text=" " AutoPostBack="True"/>--%>
+                                                <%--<asp:RadioButton ID="CBFinal" runat="server" Width="215px" Text=" " AutoPostBack="True"/>--%>
+                                                <%--<asp:Label ID="lblFinal" runat="server" Text="Label"></asp:Label>--%>
                                             </td>
                                             <td class="auto-style5">
                                                 &nbsp;</td>
