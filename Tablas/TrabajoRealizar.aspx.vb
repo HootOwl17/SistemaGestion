@@ -307,6 +307,6 @@ Public Class TrabajoRealizar
 
 
     Protected Sub txtFecha_TextChanged(sender As Object, e As EventArgs) Handles txtFecha.TextChanged
-        txtFecha.Text = Calendar1.SelectedDate.ToString
+        txtFecha.Text = Calendar1.SelectedDate.ToString("yyyy-MM-dd HH:mm:ss")
     End Sub
 End Class
