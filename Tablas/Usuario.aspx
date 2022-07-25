@@ -76,6 +76,11 @@
                         <a class="collapse-item" href="../Tablas/Sucursal.aspx">Sucursal</a>
                         <a class="collapse-item" href="../Tablas/Empleado.aspx">Empleado</a>
                         <a class="collapse-item" href="../Tablas/Cliente.aspx">Cliente</a>
+                        <a class="collapse-item" href="../Tablas/TrabajoRealizar.aspx">Trabajos a Realizar</a>
+                        <a class="collapse-item" href="../Tablas/TrabajoRealizado.aspx">Trabajos Realizados</a>
+                        <a class="collapse-item" href="../Tablas/Facturacion.aspx">Facturacion</a>
+                        <a class="collapse-item" href="../Tablas/Pagos.aspx">Pagos</a>
+                        <a class="collapse-item" href="../Tablas/PagosHistorial.aspx">Historial de Pagos</a>
                         <a class="collapse-item" href="register.aspx">Register</a>
                         <a class="collapse-item" href="forgot-password.aspx">Forgot Password</a>
                         <div class="collapse-divider"></div>
