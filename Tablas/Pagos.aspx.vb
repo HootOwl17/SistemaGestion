@@ -325,7 +325,6 @@ Public Class Pagos
         Conexiones.Cnn.Open()
 
         Dim da As New MySqlDataAdapter("CALL FacturaByID('" & txtID.Text & "',1)", Conexiones.Cnn)
-        'SELECT sucursal.*, empresa.NOMBRE as 'EMPRESA' FROM sucursal INNER JOIN empresa on empresa.ID_EMPRESA = sucursal.ID_EMPRESA
         Dim ds As New DataSet
         da.Fill(ds)
 
