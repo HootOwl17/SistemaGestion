@@ -49,7 +49,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="../index.aspx">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <span> Menu Principal </span></a>
             </li>
 
             <!-- Divider -->
@@ -59,6 +59,37 @@
             <div class="sidebar-heading">
                 Interface
             </div>
+
+             <!-- Items del menu de opciones lateral-->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Opciones</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Pantallas</h6>
+                        <a class="collapse-item" href="../login.aspx">Login</a>
+                        <a class="collapse-item" href="../Tablas/Usuario.aspx">Usuario</a>
+                        <a class="collapse-item" href="../Tablas/Empresa.aspx">Empresa</a>
+                        <a class="collapse-item" href="../Tablas/Sucursal.aspx">Sucursal</a>
+                        <a class="collapse-item" href="../Tablas/Empleado.aspx">Empleado</a>
+                        <a class="collapse-item" href="../Tablas/Cliente.aspx">Cliente</a>
+                        <a class="collapse-item" href="../Tablas/TrabajoRealizar.aspx">Trabajos a Realizar</a>
+                        <a class="collapse-item" href="../Tablas/TrabajoRealizado.aspx">Trabajos Realizados</a>
+                        <a class="collapse-item" href="../Tablas/Facturacion.aspx">Facturacion</a>
+                        <a class="collapse-item" href="../Tablas/Pagos.aspx">Pagos</a>
+                        <a class="collapse-item" href="../Tablas/PagosHistorial.aspx">Historial de Pagos</a>
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Other Pages:</h6>
+                        <a class="collapse-item" href="../register.aspx">Register</a>
+                        <a class="collapse-item" href="../forgot-password.aspx">Forgot Password</a>
+                        <a class="collapse-item" href="../404.aspx">404 Page</a>
+                        <a class="collapse-item" href="../blank.aspx">Blank Page</a>
+                    </div>
+                </div>
+            </li>
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
