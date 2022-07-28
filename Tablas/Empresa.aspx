@@ -405,6 +405,7 @@
                                             <td class="auto-style8">NOMBRE</td>
                                             <td class="auto-style2">
                                                 <asp:TextBox ID="txtNombre" runat="server" Width="215px"></asp:TextBox>
+                                                <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Ingrese un nombre" ControlToValidate="txtNombre" ValidationGroup="EmpresaInfo"></asp:RequiredFieldValidator>--%>
                                             </td>
                                             <td class="auto-style5">
                                                 <asp:Button ID="btnGuardar" runat="server" Text="Guardar" Width="119px" />

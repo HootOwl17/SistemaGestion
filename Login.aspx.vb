@@ -25,15 +25,15 @@ Public Class login
         If ds.Tables(0).Rows.Count > 0 Then
             CreateCookies()
             Response.Redirect("~/index.aspx")
-            While da.Fill(ds)
-                ActiveUser.NameUser = ds.Tables(0).Rows(1).Item("NOMBRE")
-                ActiveUser.LastNUser = ds.Tables(0).Rows(1).Item("APELLIDO")
-                ActiveUser.Password = ds.Tables(0).Rows(1).Item("PASSWORD")
-                ActiveUser.Phone = ds.Tables(0).Rows(1).Item("TELEFONO")
-                ActiveUser.Email = ds.Tables(0).Rows(1).Item("CORREO")
-                ActiveUser.Active = ds.Tables(0).Rows(1).Item("ACTIVO")
-                ActiveUser.IdUser = ds.Tables(0).Rows(1).Item("ID_USUARIO")
-            End While
+            Session("UserId") = ds.Tables(0).Rows(0).Item("ID_USUARIO")
+            Session("NameUser") = ds.Tables(0).Rows(0).Item("NOMBRE")
+            Session("LastNUser") = ds.Tables(0).Rows(0).Item("APELLIDO")
+            Session("Password") = ds.Tables(0).Rows(0).Item("PASSWORD")
+            Session("Phone") = ds.Tables(0).Rows(0).Item("TELEFONO")
+            Session("Email") = ds.Tables(0).Rows(0).Item("CORREO")
+            Session("Active") = ds.Tables(0).Rows(0).Item("ACTIVO")
+
+            Server.Transfer("~/index.aspx")
 
         Else
             MsgBox("usuario incorrecto! ", vbCritical, "Login Error")

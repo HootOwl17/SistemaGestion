@@ -1,4 +1,5 @@
 ﻿Imports SistemaGestion
+
 Public Class index
     Inherits System.Web.UI.Page
 
@@ -6,8 +7,8 @@ Public Class index
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         VerificaCookie()
 
-        lblUser.Text = ActiveUser.NameUser + " " + ActiveUser.LastNUser
-        txtWelcome.Text = "BIENVENIDO " + ActiveUser.NameUser + " " + ActiveUser.LastNUser + " " + ActiveUser.IdUser
+        lblUser.Text = Session("NameUser") + " " + Session("LastNUser")
+        txtWelcome.Text = "BIENVENIDO " + Session("NameUser") + " " + Session("LastNUser") + " " + Session("UserId")
     End Sub
 
     Private Sub VerificaCookie()
