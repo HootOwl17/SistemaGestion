@@ -55,22 +55,22 @@
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
-                                                <asp:CheckBox ID="rememberCheck" runat="server" class="custom-control-input" />
-                                                <asp:Label ID="rememberLb" runat="server" class="custom-control-label" for="customCheck">Recordarme</asp:Label>
+                                                <%--<asp:CheckBox ID="rememberCheck" runat="server" class="custom-control-input" />--%>
+                                                <%--<asp:Label ID="rememberLb" runat="server" class="custom-control-label" for="customCheck">Recordarme</asp:Label>--%>
                                             </div>
                                         </div>
                                         <asp:Button ID="loginBtn" runat="server" Text="Login" class="btn btn-primary btn-user btn-block"/>
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <asp:HyperLink ID="HyperLink1" runat="server" class="small" href="forgot-password.aspx">
+                                        <%--<asp:HyperLink ID="HyperLink1" runat="server" class="small" href="forgot-password.aspx">
                                             Olvido su Contraseña?
-                                        </asp:HyperLink>
+                                        </asp:HyperLink>--%>
                                     </div>
                                     <div class="text-center">
-                                        <asp:HyperLink ID="HyperLink2" runat="server" class="small" href="register.aspx">
+                                        <%--<asp:HyperLink ID="HyperLink2" runat="server" class="small" href="register.aspx">
                                             Crear una cuenta
-                                        </asp:HyperLink>
+                                        </asp:HyperLink>--%>
                                     </div>
                                 </div>
                             </div>
