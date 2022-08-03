@@ -65,7 +65,7 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                     aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Opciones</span>
+                    <span>MENU</span>
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
@@ -95,14 +95,14 @@
 
             
             <!-- Nav Item - Charts -->
-            <li class="nav-item">
+            <!--<li class="nav-item">
                 <a class="nav-link" href="charts.aspx">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Charts</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
-            <li class="nav-item active">
+            <!--<li class="nav-item active">
                 <a class="nav-link" href="tables.aspx">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Tables</span></a>
@@ -301,7 +301,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"><asp:Label ID="txtUser" runat="server" Text="User"></asp:Label></span>                                
                                 <img class="img-profile rounded-circle"
-                                    src="../img/undraw_profile.svg"/>
+                                    src="../img/logo.jpg.jpg"/>
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"

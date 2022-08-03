@@ -65,7 +65,7 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                     aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Opciones</span>
+                    <span>MENU</span>
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
@@ -93,50 +93,11 @@
 
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                    aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Pages</span>
-                </a>
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Pantallas</h6>
-                        <a class="collapse-item" href="../login.aspx">Login</a>
-                        <a class="collapse-item" href="../Tablas/Usuario.aspx">Usuario</a>
-                        <a class="collapse-item" href="../Tablas/Empresa.aspx">Empresa</a>
-                        <a class="collapse-item" href="../Tablas/Sucursal.aspx">Sucursal</a>
-                        <a class="collapse-item" href="../Tablas/Empleado.aspx">Empleado</a>
-                        <a class="collapse-item" href="../Tablas/Cliente.aspx">Cliente</a>
-                        <a class="collapse-item" href="../Tablas/TrabajoRealizar.aspx">Trabajos a Realizar</a>
-                        <a class="collapse-item" href="../Tablas/TrabajoRealizado.aspx">Trabajos Realizados</a>
-                        <a class="collapse-item" href="../Tablas/Facturacion.aspx">Facturacion</a>
-                        <a class="collapse-item" href="../Tablas/Pagos.aspx">Pagos</a>
-                        <a class="collapse-item" href="../Tablas/PagosHistorial.aspx">Historial de Pagos</a>
-                        <a class="collapse-item" href="register.aspx">Register</a>
-                        <a class="collapse-item" href="forgot-password.aspx">Forgot Password</a>
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="404.aspx">404 Page</a>
-                        <a class="collapse-item" href="blank.aspx">Blank Page</a>
-                    </div>
-                </div>
-            </li>
-
+           
             <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="charts.aspx">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
-            </li>
-
+            
             <!-- Nav Item - Tables -->
-            <li class="nav-item active">
-                <a class="nav-link" href="tables.aspx">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
-            </li>
-
+           
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block"/>
 
@@ -188,7 +149,7 @@
                                 <i class="fas fa-search fa-fw"></i>
                             </a>
                             <!-- Dropdown - Messages -->
-                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                           <!-- <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
                                 aria-labelledby="searchDropdown">
                                 <form class="form-inline mr-auto w-100 navbar-search">
                                     <div class="input-group">
@@ -203,18 +164,18 @@
                                     </div>
                                 </form>
                             </div>
-                        </li>
+                        </li>-->
 
                         <!-- Nav Item - Alerts -->
-                        <li class="nav-item dropdown no-arrow mx-1">
+                       <!-- <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-bell fa-fw"></i>
+                                <i class="fas fa-bell fa-fw"></i>-->
                                 <!-- Counter - Alerts -->
-                                <span class="badge badge-danger badge-counter">0+</span>
-                            </a>
+                               <!-- <span class="badge badge-danger badge-counter">0+</span>
+                            </a>-->
                             <!-- Dropdown - Alerts -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                           <!-- <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="alertsDropdown">
                                 <h6 class="dropdown-header">
                                     Alerts Center
@@ -257,15 +218,15 @@
                         </li>
 
                         <!-- Nav Item - Messages -->
-                        <li class="nav-item dropdown no-arrow mx-1">
+                        <!--<li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-envelope fa-fw"></i>
                                 <!-- Counter - Messages -->
-                                <span class="badge badge-danger badge-counter">1</span>
+                                <!--<span class="badge badge-danger badge-counter">1</span>
                             </a>
                             <!-- Dropdown - Messages -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                           <!-- <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="messagesDropdown">
                                 <h6 class="dropdown-header">
                                     Message Center
@@ -330,7 +291,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"><asp:Label ID="txtUser" runat="server" Text="User"></asp:Label></span>                                
                                 <img class="img-profile rounded-circle"
-                                    src="../img/undraw_profile.svg"/>
+                                    src="../img/logo.jpg.jpg"/>
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"

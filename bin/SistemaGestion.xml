@@ -100,45 +100,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:SistemaGestion.login._rememberCheck">
-<summary>
-Control rememberCheck.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:SistemaGestion.login._rememberLb">
-<summary>
-Control rememberLb.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:SistemaGestion.login._loginBtn">
 <summary>
 Control loginBtn.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:SistemaGestion.login._HyperLink1">
-<summary>
-Control HyperLink1.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:SistemaGestion.login._HyperLink2">
-<summary>
-Control HyperLink2.
 </summary>
 <remarks>
 Campo generado automáticamente.
