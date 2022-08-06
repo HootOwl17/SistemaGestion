@@ -22,7 +22,7 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet"/>
 
-</head>8
+</head>
 
 <body id="page-top">
 
@@ -494,7 +494,7 @@
                                         </span>
                                         <span class="mr-2 text-center">
                                             <i class="fas fa-circle text-info text-center"></i> 
-                                            <a class="dropdown-item text-center" href="../Tablas/TrabaFacturacion.aspx">FACTURACION</a>
+                                            <a class="dropdown-item text-center" href="../Tablas/Facturacion.aspx">FACTURACION</a>
                                         </span>
                                     </div>
                                 </div>
