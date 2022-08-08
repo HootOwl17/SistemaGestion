@@ -17,6 +17,7 @@ Public Class TrabajoRealizar
             listSucursal()
             listCliente()
             listEmpleado()
+            CBFinal.Checked = False
         End If
     End Sub
 
