@@ -143,18 +143,18 @@ Public Class TrabajoRealizar
             ttrabajo = 2
         End If
 
-        If CBFinal.Checked = True Then
-            final = 1
-            'lblFinal.Text = "Finalizado " + final.ToString
-        ElseIf CBFinal.Checked = False Then
+        If CBFinal.Checked = False Then
             final = 0
+            'lblFinal.Text = "Finalizado " + final.ToString
+        ElseIf CBFinal.Checked = True Then
+            final = 1
             'lblFinal.Text = "No Finalizado " + final.ToString
         End If
 
         If txtID.Text = "0" Or txtID.Text = "" Then
             Dim cmd As New MySqlCommand("INSERT INTO `trabajorealizado`(`ID_EMPRESA`, `ID_SUCURSAL`, `ID_CLIENTE`, `ID_EMPLEADO`, `ID_USUARIO`, `FECHA`, `DESCRIPCION`, `TIPOTRABAJO`, `FINALIZADO`, `ACTIVO`) 
                                          VALUES ('" & ddlEmpresa.SelectedValue & "','" & ddlSucursal.SelectedValue & "','" & ddlCliente.SelectedValue & "','" & ddlEmpleado.SelectedValue & "','" & 1 & 'ActiveUser.IdUser
-                                         "','" & txtFecha.Text & "','" & txtDescripcion.Text & "','" & ttrabajo & "b','" & final & "',b'1')", Conexiones.Cnn)
+                                         "','" & txtFecha.Text & "','" & txtDescripcion.Text & "','" & ttrabajo & "',b'" & final & "',b'1')", Conexiones.Cnn)
             cmd.ExecuteNonQuery()
 
             Poblar()
