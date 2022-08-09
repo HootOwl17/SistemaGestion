@@ -25,13 +25,15 @@ Public Class login
         If ds.Tables(0).Rows.Count > 0 Then
             CreateCookies()
             Response.Redirect("~/index.aspx")
-            Session("UserId") = ds.Tables(0).Rows(0).Item("ID_USUARIO")
-            Session("NameUser") = ds.Tables(0).Rows(0).Item("NOMBRE")
-            Session("LastNUser") = ds.Tables(0).Rows(0).Item("APELLIDO")
-            Session("Password") = ds.Tables(0).Rows(0).Item("PASSWORD")
-            Session("Phone") = ds.Tables(0).Rows(0).Item("TELEFONO")
-            Session("Email") = ds.Tables(0).Rows(0).Item("CORREO")
-            Session("Active") = ds.Tables(0).Rows(0).Item("ACTIVO")
+            While da.Fill(ds)
+                ActiveUser.IdUser = ds.Tables(0).Rows(0).Item("ID_USUARIO")
+                ActiveUser.NameUser = ds.Tables(0).Rows(0).Item("NOMBRE")
+                ActiveUser.LastNUser = ds.Tables(0).Rows(0).Item("APELLIDO")
+                ActiveUser.Password = ds.Tables(0).Rows(0).Item("PASSWORD")
+                ActiveUser.Phone = ds.Tables(0).Rows(0).Item("TELEFONO")
+                ActiveUser.Email = ds.Tables(0).Rows(0).Item("CORREO")
+                ActiveUser.Active = ds.Tables(0).Rows(0).Item("ACTIVO")
+            End While
 
             Server.Transfer("~/index.aspx")
 
