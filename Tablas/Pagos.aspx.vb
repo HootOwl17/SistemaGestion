@@ -106,7 +106,7 @@ Public Class Pagos
         ddlEmpresa.DataValueField = "ID_EMPRESA"
 
         ddlEmpresa.DataBind()
-        ddlEmpresa.Items.Insert(0, New ListItem("----Empresa----", "disabled"))
+        ddlEmpresa.Items.Insert(0, New ListItem("----Empresa----", "0"))
 
         Conexiones.Cnn.Close()
 
@@ -127,7 +127,7 @@ Public Class Pagos
         ddlSucursal.DataValueField = "ID_SUCURSAL"
 
         ddlSucursal.DataBind()
-        ddlSucursal.Items.Insert(0, New ListItem("----Sucursal----", "disabled"))
+        ddlSucursal.Items.Insert(0, New ListItem("----Sucursal----", "0"))
 
         Conexiones.Cnn.Close()
 
@@ -148,7 +148,7 @@ Public Class Pagos
         ddlEmpleado.DataValueField = "ID_EMPLEADO"
 
         ddlEmpleado.DataBind()
-        ddlEmpleado.Items.Insert(0, New ListItem("----Empleado----", "disabled"))
+        ddlEmpleado.Items.Insert(0, New ListItem("----Empleado----", "0"))
 
         Conexiones.Cnn.Close()
 
@@ -169,7 +169,7 @@ Public Class Pagos
         ddlCliente.DataValueField = "ID_CLIENTE"
 
         ddlCliente.DataBind()
-        ddlCliente.Items.Insert(0, New ListItem("----Cliente----", "disabled"))
+        ddlCliente.Items.Insert(0, New ListItem("----Cliente----", "0"))
 
         Conexiones.Cnn.Close()
 
@@ -190,7 +190,7 @@ Public Class Pagos
         ddlTrabajo.DataValueField = "ID_TRABAJOREALIZADO"
 
         ddlTrabajo.DataBind()
-        ddlTrabajo.Items.Insert(0, New ListItem("----Trabajo----", "disabled"))
+        ddlTrabajo.Items.Insert(0, New ListItem("----Trabajo----", "0"))
 
         Conexiones.Cnn.Close()
 
@@ -232,16 +232,21 @@ Public Class Pagos
 
         Else
             'txtID.Text = ""
-            ddlEmpresa.SelectedValue = ds.Tables(0).Rows(0).Item("ID_EMPRESA")
-            ddlSucursal.SelectedValue = ds.Tables(0).Rows(0).Item("ID_SUCURSAL")
-            ddlEmpleado.SelectedValue = ds.Tables(0).Rows(0).Item("ID_EMPLEADO")
-            ddlCliente.SelectedValue = ds.Tables(0).Rows(0).Item("ID_CLIENTE")
-            txtPago.Text = ds.Tables(0).Rows(0).Item("ID_TRABAJOREALIZADO")
-            ddlTrabajo.SelectedValue = ds.Tables(0).Rows(0).Item("ID_TRABAJOREALIZADO")
+            ddlEmpresa.SelectedValue = 0
+            ddlSucursal.SelectedValue = 0
+            ddlEmpleado.SelectedValue = 0
+            ddlCliente.SelectedValue = 0
+            txtPago.Text = ""
+            ddlTrabajo.SelectedValue = 0
             RBContado.Checked = False
             RBCredito.Checked = False
             Calendar1.SelectedDate = Today
             txtFecha.Text = Calendar1.SelectedDate.ToString("yyyy-MM-dd HH:mm:ss")
+            txtAbonado.Text = ""
+            txtEstadoPago.Text = ""
+            txtNeto.Text = ""
+            txtIVA.Text = ""
+            txtTotal.Text = ""
         End If
 
         Conexiones.Cnn.Close()
@@ -303,6 +308,14 @@ Public Class Pagos
         Dim pago As Double
         Dim iva As Double
         Dim total As Double
+
+        If txtNeto.Text = "" Then
+            txtNeto.Text = 0
+        End If
+        If txtAbonado.Text = "" Then
+            txtAbonado.Text = 0
+        End If
+
         pago = txtNeto.Text
         iva = pago * (0.13)
         total = pago + iva
