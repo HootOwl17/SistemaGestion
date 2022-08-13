@@ -532,9 +532,8 @@
                                             <asp:BoundField DataField="ID_PAGO" HeaderText="CODIGO DE PAGO" />
                                             <asp:BoundField DataField="T_TRABAJO" HeaderText="TIPO DE TRABAJO" />
                                             <asp:BoundField DataField="DESCRIPCION" HeaderText="DESCRIPCIÓN DEL TRABAJO" />
-                                            <asp:BoundField DataField="EMPLEADO" HeaderText="EMPLEADO" />
                                             <asp:BoundField DataField="FECHA" HeaderText="FECHA" />
-                                            <asp:BoundField DataField="PG_TIPOPAGO" HeaderText="TIPO DE PAGO" />
+                                            <asp:BoundField DataField="NOMBRE_TIPOPAGO" HeaderText="TIPO DE PAGO" />
                                             <asp:BoundField DataField="ESTADO" HeaderText="ESTADO DEL PAGO" />
                                             <asp:BoundField DataField="PG_TOTALNETO" HeaderText="TOTAL NETO" />
                                             <asp:BoundField DataField="PG_TOTALPAGADO" HeaderText="TOTAL PAGADO" />
