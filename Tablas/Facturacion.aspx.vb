@@ -284,14 +284,14 @@ Public Class Facturacion
             Dim cmd As New MySqlCommand("CALL AddFactura ('" & txtID.Text & "','" & ddlEmpresa.SelectedValue & "','" & ddlSucursal.SelectedValue & "', '" & ddlCliente.SelectedValue & "', '" & ddlEmpleado.SelectedValue & "', '" & ddlTrabajo.SelectedValue &
                                         "', '" & txtFecha.Text & "', '1', '" & tpago & "', '" & txtEstadoPago.Text & "', '" & txtAbonado.Text & "', '" & txtNeto.Text & "', '" & txtIVA.Text & "', '" & txtTotal.Text & "')", Conexiones.Cnn)
             cmd.ExecuteNonQuery()
-            txtSentencia.Text = cmd.CommandText
+            'txtSentencia.Text = cmd.CommandText
             Poblar()
             Limpiar()
         Else
             Dim cmd As New MySqlCommand("CALL UpdateFactura ('" & txtID.Text & "','" & ddlEmpresa.SelectedValue & "','" & ddlSucursal.SelectedValue & "', '" & ddlCliente.SelectedValue & "', '" & ddlEmpleado.SelectedValue & "', '" & ddlTrabajo.SelectedValue &
                                         "', '" & txtFecha.Text & "', '1', '" & tpago & "', '" & txtEstadoPago.Text & "', '" & txtAbonado.Text & "', '" & txtNeto.Text & "', '" & txtIVA.Text & "', '" & txtTotal.Text & "')", Conexiones.Cnn)
             cmd.ExecuteNonQuery()
-            txtSentencia.Text = cmd.CommandText
+            'txtSentencia.Text = cmd.CommandText
             Poblar()
             Limpiar()
 
