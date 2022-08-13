@@ -10,7 +10,7 @@
     <meta name="description" content=""/>
     <meta name="author" content=""/>
 
-    <title>FACTURACIÓN</title>
+    <title>HISTORIAL DE PAGOS</title>
 
     <!-- Custom fonts for this template -->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"/>
@@ -390,12 +390,11 @@
                                             <asp:BoundField DataField="EMPLEADO" HeaderText="EMPLEADO" />
                                             <asp:BoundField DataField="DESCRIPCION" HeaderText="DESCRIPCIÓN DEL TRABAJO" />
                                             <asp:BoundField DataField="FECHA" HeaderText="FECHA" />
-                                            <asp:BoundField DataField="PG_TIPOPAGO" HeaderText="TIPO DE PAGO" />
                                             <asp:BoundField DataField="ESTADO_PAGO" HeaderText="ESTADO DEL PAGO" />
-                                            <asp:BoundField DataField="PG_TOTALNETO" HeaderText="TOTAL NETO" />
-                                            <asp:BoundField DataField="PG_TOTALPAGADO" HeaderText="TOTAL PAGADO" />
-                                            <asp:BoundField DataField="PG_IVA" HeaderText="IVA" />
-                                            <asp:BoundField DataField="PG_TOTALPAGAR" HeaderText="TOTAL A PAGAR" />
+                                            <asp:BoundField DataField="TOTALNETO" HeaderText="TOTAL NETO" />
+                                            <asp:BoundField DataField="TOTALPAGADO" HeaderText="TOTAL PAGADO" />
+                                            <asp:BoundField DataField="TOTALIVA" HeaderText="IVA" />
+                                            <asp:BoundField DataField="TOTALPAGAR" HeaderText="TOTAL A PAGAR" />
                                         </Columns>
                                     </asp:GridView>                               
 
