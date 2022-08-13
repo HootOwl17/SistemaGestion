@@ -390,7 +390,7 @@
                                             <asp:BoundField DataField="EMPLEADO" HeaderText="EMPLEADO" />
                                             <asp:BoundField DataField="DESCRIPCION" HeaderText="DESCRIPCIÓN DEL TRABAJO" />
                                             <asp:BoundField DataField="FECHA" HeaderText="FECHA" />
-                                            <asp:BoundField DataField="ESTADO_PAGO" HeaderText="ESTADO DEL PAGO" />
+                                            <asp:BoundField DataField="ESTADO" HeaderText="ESTADO DEL PAGO" />
                                             <asp:BoundField DataField="TOTALNETO" HeaderText="TOTAL NETO" />
                                             <asp:BoundField DataField="TOTALPAGADO" HeaderText="TOTAL PAGADO" />
                                             <asp:BoundField DataField="TOTALIVA" HeaderText="IVA" />
